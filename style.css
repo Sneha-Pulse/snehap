@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 1000;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -120px;
+    color: white;
+    font-size: 10em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    color: #000000;
+    clip-path: circle(0px at center center);
+    /* clip-path: circle(300px at center center); */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200vh;
+    padding: 100px;
+    background: #fff;
+    color: #000000;
+    font-family: 'EB Garamond', serif; /* Updated font */
+    text-align: center; /* Centered text */
+}
+.container h1 {
+    font-size: 3em; /* Increased font size */
+    font-family: 'Play', sans-serif; /* Updated font to Play */
+    font-weight: bold; /* Added bold weight */
+    margin-bottom: 20px;
+    text-align: center; /* Centered text */
+}
+.container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Play', sans-serif; /* Updated font */
+    text-align: center; /* Centered text */
+    font-weight: normal; /* Removed boldness */
+    line-height: 1.2; /* Increased margin space between lines */
+}
+.container h6 {
+    font-size: 1em; /* Decreased font size to the lowest */
+    margin-bottom: 20px;
+    font-family: 'Cursive', italic; /* Updated font to a good italic cursive */
+    text-align: center; /* Centered text */
+}
+
+.innerText {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 10vw;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 10vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Updated font */
+}
+
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 35px;
+    width: 420px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+button a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.6em; /* Decreased text size */
+    font-family: 'Quicksand', sans-serif; /* Updated font to Quicksand */
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .innerText, .text {
+        font-size: 5.5em;
+    }
+
+    .container p {
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 5.5em;
+    }
+
+    .container h2 {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+}
